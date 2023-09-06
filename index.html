@@ -1,84 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, shrink-to-fit=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+<meta charset="UTF-8">
+<title>Basket Random Unblocked - ubg235 GameDistribution</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<meta name="generator" content="Construct 3">
+
+	<link rel="manifest" href="appmanifest.json">
 
 
-    <title>Vex 7 Unblocked - ubg235 GameDistribution</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="icon" type="image/png" href="assets/icon.png">
-    <!-- For apple devices -->
-    <link rel="apple-touch-icon" type="image/png" href="assets/icon.png" />
-    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
-
-
-
+<script>
+window.addEventListener("keydown", function(e) {
+    // space and arrow keys
+    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+    }
+}, false);
+</script>
 
 </head>
-
 <body style="overflow:hidden;">
-    <div id="content"> </div>
-    <div id="loader">Loading...</div>
-    <div id="orientation"></div>
-
-    <script type="text/javascript">
-        var _azerionIntegration = {
-            "gdId": "0c454c9562d249d28ba3a2b50564042c",
-            "advType": "gd",
-            "rtgEnabled": true,
-            "lbEnabled": false,
-            "fbType": "dummy",
-            "alxType": "std",
-            "af": false,
-            "sa": false,
-            "la": false,
-            "bd": 0,
-            "playBtn": true,
-            "cp": false,
-            "build": {
-                "version": "tc-53",
-                "timeStamp": 1676463075693,
-                "h": "3f53fe3a"
-            }
-        }
-
-
-        var libs = [];
-
-
-        var gameName = "vex7.min.js";
-
-
-        var enableAnalytics, azAdWrapper, _azFeedback;
-
-
-
-
-
-        //This all here is for cache busting;
-        function addScript(src, buster, callback) {
-            var s = document.createElement('script');
-            s.setAttribute('src', src + '?v=' + buster);
-            if (typeof callback === 'function') {
-                s.onload = callback;
-            }
-            document.body.appendChild(s);
-        }
-
-
-
-        addScript('version.js', Date.now(), function() {
-
-            addScript(gameName, version, function() {});
-
-        });
-    </script>
-  <script src="js/analytics_ubg_v1_4.js"></script>
+<div id="fb-root"></div>
+	<script src="box2d.wasm.js"></script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+			<p class="notSupportedMessage">This game was developed with Construct. <a href="https://www.construct.net/en">Build your own games</a></p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js"></script>
+	<script src="scripts/main.js"></script>
+	<script src="scripts/register-sw.js"></script>
 </body>
-
 </html>
